@@ -1,0 +1,22 @@
+problem_setup:
+  task: 'get_xzy_randn'
+  ground_truth: 'H0'
+  min_dim: 2
+  max_dim: 2
+  measure: kci
+  xzy_holdout_sampling: separate
+  yx_kernels: gaussian
+  n_points: 100
+  n_xy_points: 100
+  min_n_zy_points: 100
+  max_n_zy_points: 1000
+  rbpt_c: 0.1
+  rbpt_gamma: 0.01
+  rbpt_seed: 1
+pval:
+  pval_estimation: 'wild'
+  n_data_resamples: 100
+  n_holdout_resamples: 100
+  n_points_wild_bootstrap: 1000
+files:
+  filename: 'test'
