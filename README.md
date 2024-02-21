@@ -7,6 +7,8 @@ The code saves everything in the `$HOME` directory.
 For the car data, it assumes there's a folder `$HOME/cit/data/car-insurance-public`.
 Run `git clone https://github.com/felipemaiapolo/cit.git` in `$HOME` to create it (since the data is distributed with the RBPT code).
 
+For the plotting notebooks, we heavily re-use the code from `https://github.com/felipemaiapolo/cit.git` [1] to reproduce their experiments.
+
 ### Artificial data experiments
 
 ``` 
@@ -71,3 +73,5 @@ def get_pval_rbpt2_ub(X, Z, Y, g1, h, loss='mse'):
     pval = 1 - scipy.stats.norm.cdf(np.sqrt(n)*np.mean(T)/np.std(T))
     return pval
 ```
+
+[1] Maia Polo, Felipe, Yuekai Sun, and Moulinath Banerjee. "Conditional independence testing under misspecified inductive biases." Advances in Neural Information Processing Systems 36 (2024).
