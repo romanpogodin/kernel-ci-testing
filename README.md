@@ -7,7 +7,7 @@ Roman Pogodin, Antonin Schrab, Yazhe Li, Danica J. Sutherland, Arthur Gretton
 https://arxiv.org/abs/2402.13196
 ```
 
-**NOTE**: the code tests `X _||_ Z | Y`, not `X _||_ Y | Z`
+**NOTE**: the code tests for `X _||_ Z | Y`, not `X _||_ Y | Z`
 
 Dependencies: `python3.9, pytorch 2.0, fastargs`. It's recommended to run everything on a GPU (the code will use it if it's available).
 
