@@ -7,7 +7,7 @@ packages = ["splitkci"]
 
 [project]
 name = "splitkci"
-version = "0.3.0"
+version = "1.0"
 description = "SplitKCI implementation and experiments"
 requires-python = ">= 3.9"
 dependencies = []
