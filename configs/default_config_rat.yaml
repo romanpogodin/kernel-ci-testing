@@ -1,17 +1,14 @@
 problem_setup:
-  task: 'randn'
+  task: 'ratinabox'
   ground_truth: 'H0'
-  min_dim: 2
-  max_dim: 2
+  dim: 100
   measure: kci
   abc_holdout_sampling: separate
-  ca_kernels: gaussian
-  n_points: 100
-  n_ac_points: 100
-  min_n_bc_points: 100
-  max_n_bc_points: 1000
+  ca_kernels: all
+  abc_budget: 100
+  min_grid_points: 100
 pval:
-  pval_estimation: 'gamma'
+  pval_estimation: 'wild'
   n_data_resamples: 1
   n_holdout_resamples: 1000
   n_points_wild_bootstrap: 1000

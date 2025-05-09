@@ -11,7 +11,7 @@ problem_setup:
   min_n_bc_points: 100
   max_n_bc_points: 1000
 pval:
-  pval_estimation: 'gamma'
+  pval_estimation: 'wild'
   n_data_resamples: 1
   n_holdout_resamples: 1000
   n_points_wild_bootstrap: 1000

@@ -1,7 +1,6 @@
 import torch
 from scipy.stats import gamma as gamma_distr
 from scipy.stats import norm as norm_distr
-from warnings import warn
 
 
 def center_kernel_matrix(K):
